@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Messenger Chatting App
 
-## Getting Started
+## Overview
+This project is a messenger chatting application built using Next.js, Tailwind CSS, NextAuth, and MongoDB. It enables real-time messaging, file sharing, group chat functionality, and management of chat rooms and channels. The application also supports CRUD operations for efficient data management.
 
-First, run the development server:
+## Demo
+  Website link -> [click here](https://messenger-clone-nine-black.vercel.app/)
+  **Note:** Site have not any virus, browser is just showing because of UI of this app is related to real messenger. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- **Real-time Messaging:** Utilizes Pusher for real-time messaging, enabling seamless communication between users.
+- **Responsive Design:** Built with a responsive design using Tailwind CSS, ensuring optimal user experience across various devices and screen sizes.
+- **File Sharing:** Users can share files within conversations, enhancing collaboration and interaction.
+- **Group Chat:** Supports group chat functionality, allowing multiple users to participate in conversations simultaneously.
+- **Chat Room and Channel Management:** Enables users to create, join, and manage chat rooms and channels according to their preferences.
+- **CRUD Operations:** Implements CRUD operations for user-friendly data management, enabling users to create, read, update, and delete messages and other content.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
+- **Frontend:** Next.js, Tailwind CSS
+- **Authentication:** NextAuth
+- **Database:** MongoDB
+- **Real-time Messaging:** Pusher
+- **Image Uploading:** Cloudinary CDN
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Set up environment variables for authentication and database connection.
+4. Run the application using `npm run dev`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
+1. Register or log in to access the messaging features.
+2. Create or join chat rooms and channels.
+3. Start sending and receiving real-time messages.
+4. Share files and engage in group conversations.
+5. Manage your conversations and content using CRUD operations.
 
-## Learn More
+## Contributing
+Contributions are welcome! Feel free to fork the repository and submit pull requests for any enhancements or bug fixes.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Environment Variables
+- `DATABASE_URL`: MongoDB connection string.
+- `NEXTAUTH_SECRET`: Secret key for NextAuth authentication.
+- `GITHUB_ID`: GitHub OAuth client ID.
+- `GITHUB_SECRET`: GitHub OAuth client secret.
+- `GOOGLE_CLIENT_ID`: Google OAuth client ID.
+- `GOOGLE_CLIENT_SECRET`: Google OAuth client secret.
+- `NEXT_PUBLIC_PUSHER_APP_KEY`: Pusher app key.
+- `PUSHER_APP_ID`: Pusher app ID.
+- `PUSHER_SECRET`: Pusher app secret.
+- `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME`: Cloudinary cloud name.
